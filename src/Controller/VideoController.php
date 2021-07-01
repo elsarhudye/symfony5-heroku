@@ -34,7 +34,7 @@ class VideoController extends AbstractController
             return $this->redirectToRoute('app_home');
         }
         return $this->render('video/add.html.twig', [
-            'controller_name' => 'VideoController',
+            'form' => $form->createView(),
         ]);
     }
 }
